@@ -64,7 +64,7 @@ function App() {
         {isLoading ? (
           <Skeleton.Image style={{ width: proportions.width, height: proportions.height }} active={true} />
         ) : (
-          <Carousel autoplay={true} autoplaySpeed={1500} style={{ width: '350px' }}>
+          <Carousel autoplay={true} autoplaySpeed={1500} style={{ width: proportions.width }}>
             {data.map((data: { url: string | undefined }, index) => {
               return (
                 <div key={index}>
